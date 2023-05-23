@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/index.js">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pathway+Extreme:wght@200&display=swap');
+      </style>
+    <title>Calculadora de juros</title>
+</head>
+<body>
+    <div class="container">
+        <label for="principal">Capital:</label>
+        <input type="text" id="principal" placeholder="Digite o valor principal">
+
+        <label for="taxa">Taxa de Juros (%):</label>
+        <input type="text" id="taxa" placeholder="Digite a taxa de juros">
+
+        <label for="periodo">Período (em meses):</label>
+        <input type="text" id="periodo" placeholder="Digite o período">
+
+        <button onclick="calcularJurosSimples()">Calcular Juros Simples</button>
+        <button onclick="calcularJurosCompostos()">Calcular Juros Compostos</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
